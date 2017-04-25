@@ -99,195 +99,197 @@ public interface PerlParserConstants {
   /** RegularExpression Id. */
   int DEFAULT_ = 52;
   /** RegularExpression Id. */
-  int EVAL = 53;
+  int BEGIN_ = 53;
   /** RegularExpression Id. */
-  int LOCAL = 54;
+  int EVAL = 54;
   /** RegularExpression Id. */
-  int POD_DEC = 55;
+  int LOCAL = 55;
   /** RegularExpression Id. */
-  int HEAD1 = 56;
+  int POD_DEC = 56;
   /** RegularExpression Id. */
-  int HEAD2 = 57;
+  int HEAD1 = 57;
   /** RegularExpression Id. */
-  int HEAD3 = 58;
+  int HEAD2 = 58;
   /** RegularExpression Id. */
-  int HEAD4 = 59;
+  int HEAD3 = 59;
   /** RegularExpression Id. */
-  int OVER = 60;
+  int HEAD4 = 60;
   /** RegularExpression Id. */
-  int ITEM = 61;
+  int OVER = 61;
   /** RegularExpression Id. */
-  int BEGIN = 62;
+  int ITEM = 62;
   /** RegularExpression Id. */
-  int BACK = 63;
+  int BEGIN = 63;
   /** RegularExpression Id. */
-  int END = 64;
+  int BACK = 64;
   /** RegularExpression Id. */
-  int POD_FOR = 65;
+  int END = 65;
   /** RegularExpression Id. */
-  int ENCODING = 66;
+  int POD_FOR = 66;
   /** RegularExpression Id. */
-  int CUT = 67;
+  int ENCODING = 67;
   /** RegularExpression Id. */
-  int INTEGER_LITERAL = 68;
+  int CUT = 68;
   /** RegularExpression Id. */
-  int DECIMAL_LITERAL = 69;
+  int INTEGER_LITERAL = 69;
   /** RegularExpression Id. */
-  int BINARY_LITERAL = 70;
+  int DECIMAL_LITERAL = 70;
   /** RegularExpression Id. */
-  int HEX_LITERAL = 71;
+  int BINARY_LITERAL = 71;
   /** RegularExpression Id. */
-  int OCTAL_LITERAL = 72;
+  int HEX_LITERAL = 72;
   /** RegularExpression Id. */
-  int FLOATING_POINT_LITERAL = 73;
+  int OCTAL_LITERAL = 73;
   /** RegularExpression Id. */
-  int EXPONENT = 74;
+  int FLOATING_POINT_LITERAL = 74;
   /** RegularExpression Id. */
-  int STRING_LITERAL = 75;
+  int EXPONENT = 75;
   /** RegularExpression Id. */
-  int DOUBLE_QUOTE_STRING = 76;
+  int STRING_LITERAL = 76;
   /** RegularExpression Id. */
-  int QQ_STRING = 77;
+  int DOUBLE_QUOTE_STRING = 77;
   /** RegularExpression Id. */
-  int SINGLE_QUOTE_STRING = 78;
+  int QQ_STRING = 78;
   /** RegularExpression Id. */
-  int POD = 79;
+  int SINGLE_QUOTE_STRING = 79;
   /** RegularExpression Id. */
-  int Q_STRING = 80;
+  int POD = 80;
   /** RegularExpression Id. */
-  int REGEX_LITERAL = 81;
+  int Q_STRING = 81;
   /** RegularExpression Id. */
-  int CMD_LITERAL = 82;
+  int REGEX_LITERAL = 82;
   /** RegularExpression Id. */
-  int IDENTIFIER = 83;
+  int CMD_LITERAL = 83;
   /** RegularExpression Id. */
-  int SCALAR_NAME = 84;
+  int IDENTIFIER = 84;
   /** RegularExpression Id. */
-  int ARRAY_NAME = 85;
+  int SCALAR_NAME = 85;
   /** RegularExpression Id. */
-  int HASH_NAME = 86;
+  int ARRAY_NAME = 86;
   /** RegularExpression Id. */
-  int ONE_LETTER = 87;
+  int HASH_NAME = 87;
   /** RegularExpression Id. */
-  int LETTER = 88;
+  int ONE_LETTER = 88;
   /** RegularExpression Id. */
-  int PART_LETTER = 89;
+  int LETTER = 89;
   /** RegularExpression Id. */
-  int LPAREN = 90;
+  int PART_LETTER = 90;
   /** RegularExpression Id. */
-  int RPAREN = 91;
+  int LPAREN = 91;
   /** RegularExpression Id. */
-  int LBRACE = 92;
+  int RPAREN = 92;
   /** RegularExpression Id. */
-  int RBRACE = 93;
+  int LBRACE = 93;
   /** RegularExpression Id. */
-  int LBRACKET = 94;
+  int RBRACE = 94;
   /** RegularExpression Id. */
-  int RBRACKET = 95;
+  int LBRACKET = 95;
   /** RegularExpression Id. */
-  int SEMICOLON = 96;
+  int RBRACKET = 96;
   /** RegularExpression Id. */
-  int COMMA = 97;
+  int SEMICOLON = 97;
   /** RegularExpression Id. */
-  int ASSIGN = 98;
+  int COMMA = 98;
   /** RegularExpression Id. */
-  int GT = 99;
+  int ASSIGN = 99;
   /** RegularExpression Id. */
-  int LT = 100;
+  int GT = 100;
   /** RegularExpression Id. */
-  int CMP = 101;
+  int LT = 101;
   /** RegularExpression Id. */
-  int BANG = 102;
+  int CMP = 102;
   /** RegularExpression Id. */
-  int TILDE = 103;
+  int BANG = 103;
   /** RegularExpression Id. */
-  int HOOK = 104;
+  int TILDE = 104;
   /** RegularExpression Id. */
-  int COLON = 105;
+  int HOOK = 105;
   /** RegularExpression Id. */
-  int EQ = 106;
+  int COLON = 106;
   /** RegularExpression Id. */
-  int LE = 107;
+  int EQ = 107;
   /** RegularExpression Id. */
-  int GE = 108;
+  int LE = 108;
   /** RegularExpression Id. */
-  int NE = 109;
+  int GE = 109;
   /** RegularExpression Id. */
-  int SC_OR = 110;
+  int NE = 110;
   /** RegularExpression Id. */
-  int SC_AND = 111;
+  int SC_OR = 111;
   /** RegularExpression Id. */
-  int INCR = 112;
+  int SC_AND = 112;
   /** RegularExpression Id. */
-  int DECR = 113;
+  int INCR = 113;
   /** RegularExpression Id. */
-  int PLUS = 114;
+  int DECR = 114;
   /** RegularExpression Id. */
-  int MINUS = 115;
+  int PLUS = 115;
   /** RegularExpression Id. */
-  int STAR = 116;
+  int MINUS = 116;
   /** RegularExpression Id. */
-  int POWER = 117;
+  int STAR = 117;
   /** RegularExpression Id. */
-  int BIT_AND = 118;
+  int POWER = 118;
   /** RegularExpression Id. */
-  int BIT_OR = 119;
+  int BIT_AND = 119;
   /** RegularExpression Id. */
-  int XOR = 120;
+  int BIT_OR = 120;
   /** RegularExpression Id. */
-  int REM = 121;
+  int XOR = 121;
   /** RegularExpression Id. */
-  int LSHIFT = 122;
+  int REM = 122;
   /** RegularExpression Id. */
-  int RSIGNEDSHIFT = 123;
+  int LSHIFT = 123;
   /** RegularExpression Id. */
-  int RUNSIGNEDSHIFT = 124;
+  int RSIGNEDSHIFT = 124;
   /** RegularExpression Id. */
-  int PLUSASSIGN = 125;
+  int RUNSIGNEDSHIFT = 125;
   /** RegularExpression Id. */
-  int MINUSASSIGN = 126;
+  int PLUSASSIGN = 126;
   /** RegularExpression Id. */
-  int STARASSIGN = 127;
+  int MINUSASSIGN = 127;
   /** RegularExpression Id. */
-  int SLASHASSIGN = 128;
+  int STARASSIGN = 128;
   /** RegularExpression Id. */
-  int ANDASSIGN = 129;
+  int SLASHASSIGN = 129;
   /** RegularExpression Id. */
-  int ORASSIGN = 130;
+  int ANDASSIGN = 130;
   /** RegularExpression Id. */
-  int XORASSIGN = 131;
+  int ORASSIGN = 131;
   /** RegularExpression Id. */
-  int NOTASSIGN = 132;
+  int XORASSIGN = 132;
   /** RegularExpression Id. */
-  int REMASSIGN = 133;
+  int NOTASSIGN = 133;
   /** RegularExpression Id. */
-  int POWASSIGN = 134;
+  int REMASSIGN = 134;
   /** RegularExpression Id. */
-  int CONCATASSIGN = 135;
+  int POWASSIGN = 135;
   /** RegularExpression Id. */
-  int REPEATASSIGN = 136;
+  int CONCATASSIGN = 136;
   /** RegularExpression Id. */
-  int LSHIFTASSIGN = 137;
+  int REPEATASSIGN = 137;
   /** RegularExpression Id. */
-  int RSIGNEDSHIFTASSIGN = 138;
+  int LSHIFTASSIGN = 138;
   /** RegularExpression Id. */
-  int CONCAT = 139;
+  int RSIGNEDSHIFTASSIGN = 139;
   /** RegularExpression Id. */
-  int DOUBLE_ARROW = 140;
+  int CONCAT = 140;
   /** RegularExpression Id. */
-  int REPEAT = 141;
+  int DOUBLE_ARROW = 141;
   /** RegularExpression Id. */
-  int TEMPLATE_CMP = 142;
+  int REPEAT = 142;
   /** RegularExpression Id. */
-  int TEMPLATE_NOT_CMP = 143;
+  int TEMPLATE_CMP = 143;
   /** RegularExpression Id. */
-  int SCALAR = 144;
+  int TEMPLATE_NOT_CMP = 144;
   /** RegularExpression Id. */
-  int ARRAY = 145;
+  int SCALAR = 145;
   /** RegularExpression Id. */
-  int REFERENCE = 146;
+  int ARRAY = 146;
   /** RegularExpression Id. */
-  int PATH = 147;
+  int REFERENCE = 147;
+  /** RegularExpression Id. */
+  int PATH = 148;
 
   /** Lexical state. */
   int DEFAULT = 0;
@@ -349,6 +351,7 @@ public interface PerlParserConstants {
     "\"given\"",
     "\"return\"",
     "\"default\"",
+    "\"BEGIN\"",
     "\"eval\"",
     "\"local\"",
     "\"=pod\"",

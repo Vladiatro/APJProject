@@ -22,15 +22,17 @@ public class PerlParser {
         public static void main(String args[]) throws Exception {
           PerlParser parser;
 
-
-          if (args.length != 1) {
-              System.out.println("Perl Parser usage: java PerlParser inputdir");
+          String filename = "info.csv";
+          if (args.length == 2) {
+              filename = args[1];
+          } else if (args.length != 1) {
+              System.out.println("Perl Parser usage: java PerlParser inputdir [outputfile]");
           }
           java.io.File folder = new java.io.File(args[0]);
-          java.io.PrintStream out = new java.io.PrintStream("info.csv");
-          out.println("File name, Lines of code, Scalars, Arrays, Hashed, Branches (non-cyclic), " +
+          java.io.PrintStream out = new java.io.PrintStream(filename);
+          out.println("File name, Lines of code, Scalars, Arrays, Hashes, Branches (non-cyclic), " +
               "Cycles, String operators (. lt gt ne etc), Numeric operators (+ < > != etc), " +
-              "Array gets, Hash gets, Regexes, Functions, cyclomaticComplexity");
+              "Array gets, Hash gets, Regexes, Functions, Cyclomatic complexity");
           for (java.io.File file : folder.listFiles()) {
             parser = new PerlParser(new java.io.FileInputStream(file));
             linesOfCode = numScalars = numArrays = numHashes = numBranches = numCycles = numStringOperators
@@ -142,6 +144,7 @@ TOKEN :
 | < GIVEN: "given" >
 | < RETURN: "return" >
 | < DEFAULT_: "default" >
+| < BEGIN_: "BEGIN" >
 | < EVAL: "eval" >
 | < LOCAL: "local" >
 | < POD_DEC: "=pod" >
@@ -693,6 +696,8 @@ void Statement() :
     Block()
 |
     LocalVariableDeclaration()
+|
+    <BEGIN_> Block()
 |
     EmptyStatement()
 |
